@@ -7,14 +7,27 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     message = document.getElementById("message");
     message.classList.remove("color-error", "color-success");
     message.innerText = "";
-    if (!email || !password) {
+
+    if (!email && !password) {
         message.innerText = "Please fill in all fields.";
+        message.classList.add("color-error");
+        return;
+    }
+
+    if (!email) {
+        message.innerText = "Email cannot be empty.";
+        message.classList.add("color-error");
+        return;
+    }
+
+    if (!password) {
+        message.innerText = "Password cannot be empty.";
         message.classList.add("color-error");
         return;
     }
 
     message.innerText = "Logging in...";
     message.classList.add("color-success");
-    
-    // go to php to process login todo
+
+    this.submit();
 });

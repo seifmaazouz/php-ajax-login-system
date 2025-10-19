@@ -11,18 +11,17 @@
 <body>
     <div class="container">
         <h2>Register</h2>
-        <form id="registerForm">
+        <form id="registerForm"  method="POST" action="../app/includes/register_user.php">
             <input type="text" name="name" placeholder="Name"><br>
             <input type="email" name="email" placeholder="Email"><br>
             <input type="password" name="password" placeholder="Password"><br>
             <input type="password" name="confirmPassword" placeholder="Confirm Password"><br>
-            
             <button type="submit">Register</button>
         </form>
         <p id="message"></p>
         <a href="login.html">Already have an account? Login</a>
     </div>
+    <script src="./assets/js/register.js"></script>
 </body>
-<script src="./assets/js/register.js"></script>
 
 </html>

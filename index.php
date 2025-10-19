@@ -1,3 +1,5 @@
 <?php
+session_start();
 
-echo "Index Page";
+header("Location: public/login.html");
+exit;
