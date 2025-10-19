@@ -18,6 +18,14 @@ header("Expires: 0");
     <meta charset="UTF-8">
     <title>Welcome</title>
     <link rel="stylesheet" href="../public/assets/css/welcome.css">
+    <script>
+        // Prevent going back after logout
+        window.addEventListener("pageshow", function(event) {
+            if (event.persisted) { // page was loaded from bfcache (back-forward cache)
+                window.location.reload();
+            }
+        });
+    </script>
 </head>
 
 <body>
