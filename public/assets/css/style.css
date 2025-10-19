@@ -72,17 +72,27 @@ button:hover {
 
 /* ===== Messages ===== */
 #message {
-    margin-top: 10px;
     font-size: 0.9rem;
+    text-align: center;
+    margin: 10px auto 0 auto;
+}
+
+#message.color-success {
+    color: #14b41c;
+}
+
+#message.color-error {
+    color: #c62828;
 }
 
 /* ===== Links ===== */
 a {
     display: inline-block;
-    margin-top: 14px;
     color: #26a69a;
     text-decoration: none;
     font-size: 0.9rem;
+    text-align: center;
+    margin: 14px auto 0 auto;
 }
 
 a:hover {
