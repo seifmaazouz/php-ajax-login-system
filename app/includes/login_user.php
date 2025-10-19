@@ -43,5 +43,5 @@ if ($result->num_rows === 1) {
     $_SESSION['name'] = $user['name'];
     respond("Login successful", true);
 } else {
-    respond("Invalid email or password.");
+    respond("Incorrect email or password.");
 }
